@@ -1,0 +1,109 @@
+1. Home / Dashboard Page
+2. Questionnaire Page
+3. AI-Based Suggestions Page
+4. Progress Tracker Page
+5. Re-Evaluation Page
+6. Motivation & Resources Page
+7. About / Help Page
+
+
+🌟 1. Home / Dashboard
+🔹 Purpose: Make the user feel positive, welcomed, and eager to begin.
+🎨 Design Layout:
+* Top Section:
+   * Big cheerful “Welcome back, [User]!” with emoji or soft animation.
+   * 🌟 Motivational Quote of the Day in a stylish quote card.
+* Middle Section:
+   * 🔄 Mood Tracker Snapshot (cards or colorful rounded boxes):
+      * Mood Score | Stress Level | Sleep Rating
+      * Icons + color gradient (e.g., green = good, red = stressed)
+* Bottom Section:
+   * 🎯 “Let’s begin your journey today” call-out.
+   * ✅ Button: “Take Today’s Mental Health Check”
+   * 🎯 Platform icons (Instagram, Twitter, etc.) shown as large clickable cards with logos and hover effects
+   * Fun animation (optional): floating stars, soft confetti, or pulsing icons.
+🧠 2. Questionnaire Page
+🔹 Purpose: Let users answer questions in a casual, non-boring way.
+🎨 Design Layout:
+* Step 1: General Mood Check (Gamified)
+   * Present questions one by one like a mini-game.
+      * e.g., “How are you really feeling today?” → 5 emoji buttons
+      * “How was your sleep?” → slider with pillow icons
+      * “Did you feel anxious?” → yes/no buttons + subtle animations
+* Step 2: Platform-Specific Selection
+   * Show cards/logos of platforms (e.g., Instagram, YouTube, Twitter)
+   * Hover = soft glow or bounce
+   * On click = navigate to that platform’s custom quiz
+* Step 3: Platform Quiz
+   * Only show 5–7 questions max.
+   * Use icons, sliders, emoji, or toggle switches
+   * Ends with a progress bar and cheerful “You did it!” screen
+💡 3. AI-Based Suggestions Page
+🔹 Purpose: Provide personalized, friendly, and actionable suggestions.
+🎨 Design Layout:
+* Top Section: Mood Summary
+   * “Your mental snapshot based on your responses”
+   * Happy/sad face icon + percentage/score
+* Middle Section: AI Tips
+   * 📋 3–5 smart suggestions
+   * Displayed in cards (each with a title, emoji, and short actionable tip)
+   * Examples:
+      * “Try a 10-minute offline break every 2 hours ⏳”
+      * “Unfollow 3 pages that trigger comparison 👀”
+* Bottom Section: Bonus Motivation
+   * “You are not alone” — 1-paragraph motivational text
+   * Optional: “Need more tips?” → refresh button for more AI tips
+📈 4. Progress Tracker Page
+🔹 Purpose: Visual feedback on how the user is evolving.
+🎨 Design Layout:
+* Top Section:
+   * “Here’s your progress over time 🎉”
+   * Line chart or bar graph (Mood, Stress, Sleep, per week)
+* Middle Section:
+   * Badges or rewards (like Duolingo):
+      * “Completed 7 days in a row!” 🏅
+      * “Mood improved by 20%!” 🌈
+* Bottom Section:
+   * Optional feedback:
+      * “What helped you most?” → Dropdown or emoji feedback
+🔁 5. Re-Evaluation Page
+🔹 Purpose: Allow the user to check progress and reassess.
+🎨 Design Layout:
+* Top Section:
+   * “Ready for a quick reassessment?” 👀
+   * Timeline showing previous evaluations
+* Middle Section:
+   * Option to retake:
+      * ✅ General Mood Check
+      * 📱 Specific Platform Quiz
+* Bottom Section:
+   * Side-by-side result comparison
+      * “Last Time” vs “Now”
+      * Highlight improvement or decline
+      * Friendly nudges, not judgments
+📚 6. Motivation & Resources Page
+🔹 Purpose: Constant positivity, education, and support.
+🎨 Design Layout:
+* Top Section: Daily Motivation
+   * Carousel of quotes or calming images
+   * Animated fade-in/fade-out
+* Middle Section: Videos/Articles
+   * “Helpful tools to calm your mind”
+   * Cards linking to YouTube videos, blogs, free therapy tools
+* Bottom Section: Self-care Tracker
+   * Small checklist: “Did you do this today?”
+      * Drink water ✅
+      * Breathe deep ✅
+      * Avoid doom scrolling ✅
+❓ 7. About / Help Page
+🔹 Purpose: Show the mission, who built it, and how to use it.
+🎨 Design Layout:
+* Top Section:
+   * “Why we built this” — short story or video intro
+* Middle Section:
+   * Meet the Team cards (photo + name + social icons)
+   * How it works (flow diagram or steps)
+* Bottom Section:
+   * FAQs
+   * Contact form (optional)
+   * “Report an Issue” button
