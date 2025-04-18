@@ -53,7 +53,11 @@ def get_random_quote():
 
 def calculate_wellbeing_score(data):
     """Calculate an overall wellbeing score based on mood data"""
-    if not data or len(data) == 0:
+    # Check if data is a pandas Series or DataFrame
+    if hasattr(data, 'to_dict'):
+        data = data.to_dict()
+    
+    if not data:
         return 0
     
     # Extract relevant metrics

@@ -1,6 +1,6 @@
 import streamlit as st
 from utils.data_utils import initialize_session_state
-from utils.openai_utils import generate_wellness_suggestions
+from utils.suggestions_generator import generate_wellness_suggestions
 from utils.ui_utils import display_wellbeing_score
 
 # Page configuration
@@ -69,14 +69,39 @@ def main():
         # Show platform-specific data if available
         if "platform" in latest_entry:
             st.markdown(f"#### {latest_entry['platform']} Usage:")
+            
+            # Display platform-specific responses
+            platform_prefix = latest_entry['platform'].lower() + "_"
+            platform_responses = {k: v for k, v in latest_entry.items() if k.startswith(platform_prefix)}
+            
+            if platform_responses:
+                # Show a sample of platform-specific responses (limited to 3 for readability)
+                st.markdown("**Selected responses:**")
+                response_count = 0
+                for key, value in platform_responses.items():
+                    if response_count < 3 and key != platform_prefix + "time" and "_feeling" not in key:
+                        # Make the key more readable
+                        readable_key = key.replace(platform_prefix, "").replace("_", " ").title()
+                        st.write(f"• {readable_key}: {value}")
+                        response_count += 1
+            
+            # Show platform time if available from older format
             if "platform_time" in latest_entry:
                 st.write(f"Time spent: {latest_entry['platform_time']}")
+            elif platform_prefix + "frequency" in latest_entry:
+                st.write(f"Usage frequency: {latest_entry[platform_prefix + 'frequency']}")
+                
+            # Show content impact if available from older format
             if "content_impact" in latest_entry:
                 impact = latest_entry['content_impact']
                 emoji = "😊" if impact == "Positive" else "😐" if impact == "Neutral" else "😔"
                 st.write(f"Impact on mood: {impact} {emoji}")
+            elif platform_prefix + "feeling" in latest_entry:
+                feeling = latest_entry[platform_prefix + 'feeling']
+                emoji = "😊" if "positive" in feeling.lower() else "😐" if "neutral" in feeling.lower() else "😔"
+                st.write(f"How you feel after use: {feeling} {emoji}")
     
-    # Middle section: AI Tips
+    # Middle section: Personalized Suggestions
     st.markdown("---")
     st.subheader("Personalized Suggestions For You")
     
