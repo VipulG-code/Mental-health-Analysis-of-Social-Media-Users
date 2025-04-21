@@ -131,19 +131,43 @@ def calculate_wellbeing_score(data):
     
     # Use ML score if available
     if "ml_wellbeing_score" in data:
-        return data["ml_wellbeing_score"]
+        ml_score = data["ml_wellbeing_score"]
+        # Handle NaN or None values
+        if ml_score is None or (isinstance(ml_score, float) and pd.isna(ml_score)):
+            ml_score = 0
+        try:
+            return int(ml_score)
+        except (ValueError, TypeError):
+            return 0
     
-    # Extract relevant metrics
-    mood = data.get('mood', 3)
-    sleep = data.get('sleep', 3)
-    stress = 6 - data.get('stress', 3)  # Invert stress so higher is better
-    anxiety = 0 if data.get('anxiety', False) else 1  # 0 if anxious, 1 if not
-    
-    # Calculate weighted average (adjust weights as needed)
-    wellbeing_score = (mood * 0.4) + (sleep * 0.3) + (stress * 0.2) + (anxiety * 0.1)
-    
-    # Convert to 0-100 scale
-    return round((wellbeing_score / 5) * 100)
+    try:
+        # Extract relevant metrics (with NaN handling)
+        mood = data.get('mood', 3)
+        if mood is None or (isinstance(mood, float) and pd.isna(mood)):
+            mood = 3
+        
+        sleep = data.get('sleep', 3)
+        if sleep is None or (isinstance(sleep, float) and pd.isna(sleep)):
+            sleep = 3
+        
+        stress = data.get('stress', 3)
+        if stress is None or (isinstance(stress, float) and pd.isna(stress)):
+            stress = 3
+        stress = 6 - stress  # Invert stress so higher is better
+        
+        anxiety = data.get('anxiety', False)
+        if anxiety is None or (isinstance(anxiety, float) and pd.isna(anxiety)):
+            anxiety = False
+        anxiety = 0 if anxiety else 1  # 0 if anxious, 1 if not
+        
+        # Calculate weighted average (adjust weights as needed)
+        wellbeing_score = (float(mood) * 0.4) + (float(sleep) * 0.3) + (float(stress) * 0.2) + (float(anxiety) * 0.1)
+        
+        # Convert to 0-100 scale
+        return int(round((wellbeing_score / 5) * 100))
+    except Exception as e:
+        print(f"Error calculating wellbeing score: {e}")
+        return 0
 
 def train_ml_model():
     """Train a machine learning model on the collected data"""
