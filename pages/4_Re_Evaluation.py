@@ -14,6 +14,10 @@ st.set_page_config(
 # Initialize session state
 initialize_session_state()
 
+# Check if user is authenticated
+if not st.session_state.get("authenticated", False):
+    st.switch_page("pages/0_Login.py")
+
 def main():
     st.markdown("<h1 style='text-align: center;'>Re-Evaluation</h1>", unsafe_allow_html=True)
     
