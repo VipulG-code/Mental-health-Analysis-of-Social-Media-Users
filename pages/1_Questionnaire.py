@@ -13,6 +13,10 @@ st.set_page_config(
 # Initialize session state
 initialize_session_state()
 
+# Check if user is authenticated
+if not st.session_state.get("authenticated", False):
+    st.switch_page("pages/0_Login.py")
+
 # Instagram Questionnaire
 instagram_questions = [
     {

@@ -42,24 +42,22 @@ def main():
         dates = df['formatted_date'].tolist() if 'formatted_date' in df.columns else []
         
         if dates:
-            # Visual timeline
-            timeline_html = """
-            <div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
-            """
+            # Visual timeline - use columns instead of flex for better compatibility
+            num_dates = len(dates)
+            timeline_cols = st.columns(num_dates)
             
             for i, date in enumerate(dates):
                 # Color the most recent entry differently
                 color = "#6C5CE7" if i == len(dates) - 1 else "#A0A0A0"
-                timeline_html += f"""
-                <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-                    <div style="width: 15px; height: 15px; border-radius: 50%; background-color: {color};"></div>
-                    <div style="height: 2px; background-color: {color}; width: 100%; margin: 5px 0;"></div>
-                    <div style="font-size: 12px; text-align: center;">{date}</div>
-                </div>
-                """
-            
-            timeline_html += "</div>"
-            st.markdown(timeline_html, unsafe_allow_html=True)
+                
+                with timeline_cols[i]:
+                    st.markdown(f"""
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div style="width: 15px; height: 15px; border-radius: 50%; background-color: {color};"></div>
+                        <div style="height: 2px; background-color: {color}; width: 100%; margin: 5px 0;"></div>
+                        <div style="font-size: 12px; text-align: center;">{date}</div>
+                    </div>
+                    """, unsafe_allow_html=True)
     
     # Middle section: Re-evaluation options
     st.markdown("---")
