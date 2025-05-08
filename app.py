@@ -166,40 +166,11 @@ def main():
             st.switch_page("pages/1_Questionnaire.py")
             
     with col4:
-        youtube = st.button("YouTube 🎬", use_container_width=True)
-        if youtube:
-            st.session_state["selected_platform"] = "YouTube"
-            st.switch_page("pages/1_Questionnaire.py")
-    
-    with col5:
         snapchat = st.button("Snapchat 👻", use_container_width=True)
         if snapchat:
             st.session_state["selected_platform"] = "Snapchat"
             st.switch_page("pages/1_Questionnaire.py")
     
-    # User data management section
-    st.markdown("---")
-    st.markdown("### 💾 Data Management")
     
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        if st.button("Export Your Data (CSV)", use_container_width=True):
-            export_path = export_user_data_csv()
-            if export_path:
-                with open(export_path, "rb") as file:
-                    st.download_button(
-                        label="Download CSV",
-                        data=file,
-                        file_name=os.path.basename(export_path),
-                        mime="text/csv"
-                    )
-            else:
-                st.error("No data to export or export failed")
-    
-    with col2:
-        if st.button("View Progress Tracker", use_container_width=True):
-            st.switch_page("pages/3_Progress_Tracker.py")
-
 if __name__ == "__main__":
     main()
