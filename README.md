@@ -27,25 +27,27 @@ Whether you're a student, a working professional, or just someone seeking emotio
 | Utilities       | Custom Python Modules |
 
 ## 📁 Project Structure
-mental\_health\_app/
+
+mental_health_app/
 │
-├── app.py               # Main application runner
-├── login.py             # Handles user login/authentication
-├── utils.py             # Helper functions
-├── users.json           # User data
-├── requirements.txt     # Python dependencies
-└── **pycache**/         # Compiled Python files
+├── app.py # Main application runner
+├── login.py # Handles user login/authentication
+├── utils.py # Helper functions
+├── users.json # User data
+├── requirements.txt # Python dependencies
+└── pycache/ # Compiled Python files
 
 
 ## 🧪 Getting Started
+
 ### 1. Clone the Repository
-git clone [(https://github.com/VipulG-code/Mental-health-Analysis-of-Social-Media-Users)]
+git clone https://github.com/VipulG-code/Mental-health-Analysis-of-Social-Media-Users.git
 cd mental_health_app
 
-### 2. Install Dependencies
+2. Install Dependencies
 pip install -r requirements.txt
 
-### 3. Run the App
+3. Run the App
 python app.py
 
 ## 🛣️ Roadmap
@@ -54,20 +56,10 @@ python app.py
 * [ ] Visualize emotional trends over time
 * [ ] Add admin panel for monitoring
 
-## 🤝 Contributing
-Contributions, issues, and feature requests are welcome!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add amazing feature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## 📄 License
 This project is licensed under the MIT License.
 
 ## 🙌 Acknowledgements
-
 * Thanks to open-source contributors and mental health advocacy communities
 * Inspired by real-world needs for digital well-being
 
