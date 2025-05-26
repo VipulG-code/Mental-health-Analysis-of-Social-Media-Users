@@ -21,8 +21,8 @@ Whether you're a student, a working professional, or just someone seeking emotio
 | Component       | Technology     |
 |----------------|----------------|
 | Language        | Python 3       |
-| Backend Logic   | Flask / Streamlit *(Assumed)* |
-| UI Framework    | HTML / Streamlit Widgets *(Assumed)* |
+| Backend Logic   | Flask / Streamlit  |
+| UI Framework    | HTML,CSS,Javascript|
 | Data Storage    | JSON Files     |
 | Utilities       | Custom Python Modules |
 
