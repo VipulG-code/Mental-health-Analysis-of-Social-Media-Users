@@ -2,10 +2,6 @@
 
 > A smart, user-friendly mental health tracking platform designed to assess and enhance your emotional well-being in the digital era.
 
-![Mental Health](https://img.shields.io/badge/Mental_Health-App-green?style=for-the-badge&logo=python)
-![Built with Python](https://img.shields.io/badge/Built%20with-Python-blue?style=for-the-badge&logo=python)
-![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)
-
 ##  About the Project
 Mental Health Companion is an intelligent digital platform that empowers users to understand and track their emotional and mental wellness. It combines user interaction, assessment tools, and analytics to promote better self-care habits in an increasingly online world.
 Whether you're a student, a working professional, or just someone seeking emotional clarity, this app provides a safe and insightful space to monitor and improve your mental health.
@@ -39,13 +35,13 @@ mental_health_app/
 ```
 
 ##  Getting Started
-
+```
 1. Install Dependencies
 pip install -r requirements.txt
 
 2. Run the App
 python app.py
-
+```
 ##  License
 This project is licensed under the MIT License.
 
