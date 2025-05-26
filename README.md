@@ -6,18 +6,18 @@
 ![Built with Python](https://img.shields.io/badge/Built%20with-Python-blue?style=for-the-badge&logo=python)
 ![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)
 
-## 💡 About the Project
+##  About the Project
 Mental Health Companion is an intelligent digital platform that empowers users to understand and track their emotional and mental wellness. It combines user interaction, assessment tools, and analytics to promote better self-care habits in an increasingly online world.
 Whether you're a student, a working professional, or just someone seeking emotional clarity, this app provides a safe and insightful space to monitor and improve your mental health.
 
-## 🛠️ Features
-- 🔐 **Secure Login System** – Simple and secure authentication  
-- 📊 **Personalized Emotional Analysis** – Evaluate emotional well-being based on user inputs  
-- 📁 **Lightweight JSON Data Handling** – No external databases required  
-- 🧰 **Modular Code Design** – Easily extendable and readable code structure  
-- 📈 **Scope for Future Enhancements** – Integrate AI/ML for sentiment analysis, chatbot, and more  
+##  Features
+-  **Secure Login System** – Simple and secure authentication  
+-  **Personalized Emotional Analysis** – Evaluate emotional well-being based on user inputs  
+-  **Lightweight JSON Data Handling** – No external databases required  
+-  **Modular Code Design** – Easily extendable and readable code structure  
+-  **Scope for Future Enhancements** – Integrate AI/ML for sentiment analysis, chatbot, and more  
 
-## 🚀 Tech Stack
+##  Tech Stack
 | Component       | Technology     |
 |----------------|----------------|
 | Language        | Python 3       |
@@ -26,7 +26,7 @@ Whether you're a student, a working professional, or just someone seeking emotio
 | Data Storage    | JSON Files     |
 | Utilities       | Custom Python Modules |
 
-## 📁 Project Structure
+##  Project Structure
 ```
 mental_health_app/
 │
@@ -38,25 +38,15 @@ mental_health_app/
 └── pycache/ # Compiled Python files
 ```
 
-## 🧪 Getting Started
+##  Getting Started
 
-### 1. Clone the Repository
-git clone https://github.com/VipulG-code/Mental-health-Analysis-of-Social-Media-Users.git
-cd Mental-health-Analysis-of-Social-Media-Users
-
-2. Install Dependencies
+1. Install Dependencies
 pip install -r requirements.txt
 
-3. Run the App
+2. Run the App
 python app.py
 
-## 🛣️ Roadmap
-* [ ] Add user registration and password encryption
-* [ ] Integrate chatbot using OpenAI API
-* [ ] Visualize emotional trends over time
-* [ ] Add admin panel for monitoring
-
-## 📄 License
+##  License
 This project is licensed under the MIT License.
 
 ## Contact
