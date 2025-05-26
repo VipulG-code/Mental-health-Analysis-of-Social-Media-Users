@@ -7,13 +7,10 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)
 
 ## 💡 About the Project
-
 Mental Health Companion is an intelligent digital platform that empowers users to understand and track their emotional and mental wellness. It combines user interaction, assessment tools, and analytics to promote better self-care habits in an increasingly online world.
-
 Whether you're a student, a working professional, or just someone seeking emotional clarity, this app provides a safe and insightful space to monitor and improve your mental health.
 
 ## 🛠️ Features
-
 - 🔐 **Secure Login System** – Simple and secure authentication  
 - 📊 **Personalized Emotional Analysis** – Evaluate emotional well-being based on user inputs  
 - 📁 **Lightweight JSON Data Handling** – No external databases required  
@@ -21,7 +18,6 @@ Whether you're a student, a working professional, or just someone seeking emotio
 - 📈 **Scope for Future Enhancements** – Integrate AI/ML for sentiment analysis, chatbot, and more  
 
 ## 🚀 Tech Stack
-
 | Component       | Technology     |
 |----------------|----------------|
 | Language        | Python 3       |
@@ -31,7 +27,6 @@ Whether you're a student, a working professional, or just someone seeking emotio
 | Utilities       | Custom Python Modules |
 
 ## 📁 Project Structure
-
 mental\_health\_app/
 │
 ├── app.py               # Main application runner
@@ -43,9 +38,8 @@ mental\_health\_app/
 
 
 ## 🧪 Getting Started
-
 ### 1. Clone the Repository
-git clone https://github.com/your-username/mental_health_app.git
+git clone [(https://github.com/VipulG-code/Mental-health-Analysis-of-Social-Media-Users)]
 cd mental_health_app
 
 ### 2. Install Dependencies
@@ -55,14 +49,12 @@ pip install -r requirements.txt
 python app.py
 
 ## 🛣️ Roadmap
-
 * [ ] Add user registration and password encryption
 * [ ] Integrate chatbot using OpenAI API
 * [ ] Visualize emotional trends over time
 * [ ] Add admin panel for monitoring
 
 ## 🤝 Contributing
-
 Contributions, issues, and feature requests are welcome!
 
 1. Fork the Project
@@ -79,16 +71,4 @@ This project is licensed under the MIT License.
 * Thanks to open-source contributors and mental health advocacy communities
 * Inspired by real-world needs for digital well-being
 
-## ✨ Connect with Me
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square\&logo=linkedin)](https://www.linkedin.com/in/vipulghodake)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat-square\&logo=github)](https://github.com/your-username)
-
 > *“Your mental health is a priority. Your happiness is an essential. Your self-care is a necessity.”*
-
-✅ You can now:
-- Paste this directly into a `README.md` file.
-- Replace `your-username` with your GitHub username.
-- Upload relevant screenshots and link them if available.
-
-Let me know if you'd like this README to include things like a **demo video**, **animated GIFs**, or **badges for Streamlit or Flask**.
