@@ -27,7 +27,7 @@ Whether you're a student, a working professional, or just someone seeking emotio
 | Utilities       | Custom Python Modules |
 
 ## 📁 Project Structure
-
+```
 mental_health_app/
 │
 ├── app.py # Main application runner
@@ -36,13 +36,13 @@ mental_health_app/
 ├── users.json # User data
 ├── requirements.txt # Python dependencies
 └── pycache/ # Compiled Python files
-
+```
 
 ## 🧪 Getting Started
 
 ### 1. Clone the Repository
 git clone https://github.com/VipulG-code/Mental-health-Analysis-of-Social-Media-Users.git
-cd mental_health_app
+cd Mental-health-Analysis-of-Social-Media-Users
 
 2. Install Dependencies
 pip install -r requirements.txt
@@ -58,6 +58,9 @@ python app.py
 
 ## 📄 License
 This project is licensed under the MIT License.
+
+## Contact
+For inquiries, contact: `vipulghodake1452@gmail.com`
 
 ## 🙌 Acknowledgements
 * Thanks to open-source contributors and mental health advocacy communities
