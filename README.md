@@ -1,4 +1,4 @@
-# 🧠 Mental Health Companion
+# Mental Health Companion
 
 > A smart, user-friendly mental health tracking platform designed to assess and enhance your emotional well-being in the digital era.
 
